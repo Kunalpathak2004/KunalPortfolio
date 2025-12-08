@@ -1,0 +1,36 @@
+body.dark {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+}
+
+body.light {
+  background-color: #fafafa;
+  color: #222;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: #a855f7;
+}
+
+button {
+  background: linear-gradient(135deg, #a855f7, #9333ea);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 100px 10%;
+}
