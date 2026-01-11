@@ -1,29 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import data from "../data";
 
 export default function Projects() {
-  const data = {
-    projects: [
-      {
-        title: "Sales Analytics Dashboard",
-        description: "Interactive Power BI dashboard tracking sales metrics and trends across regions.",
-        image: "/assets/project1.jpg",
-        link: "https://github.com"
-      },
-      {
-        title: "Customer Segmentation",
-        description: "ML-based clustering analysis to identify customer patterns and behavior groups.",
-        image: "/assets/project2.jpg",
-        link: "https://github.com"
-      },
-      {
-        title: "Data Cleaning Pipeline",
-        description: "Automated Python pipeline for data validation, cleaning, and transformation.",
-        image: "/assets/project3.jpg",
-        link: "https://github.com"
-      }
-    ]
-  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
