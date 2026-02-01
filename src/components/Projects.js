@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import data from "../data";
 
 export default function Projects() {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -93,6 +92,11 @@ const styles = `
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  body.light .projects-section {
+    background-color: #ffffff;
   }
 
   .projects-container {
@@ -120,10 +124,18 @@ const styles = `
     margin-bottom: 16px;
   }
 
+  body.light .projects-section h2 {
+    color: #1f2937;
+  }
+
   .projects-header p {
     font-size: 1.1rem;
     color: #9ca3af;
     margin-top: 12px;
+  }
+
+  body.light .projects-header p {
+    color: #6b7280;
   }
 
   .project-grid {
@@ -143,10 +155,21 @@ const styles = `
     height: 100%;
   }
 
+  body.light .project-card {
+    background: rgba(147, 51, 234, 0.06);
+    border-color: rgba(147, 51, 234, 0.18);
+  }
+
   .project-card:hover {
     border-color: rgba(168, 85, 247, 0.4);
     background: rgba(168, 85, 247, 0.08);
     box-shadow: 0 12px 40px rgba(168, 85, 247, 0.15);
+  }
+
+  body.light .project-card:hover {
+    border-color: rgba(147, 51, 234, 0.45);
+    background: rgba(147, 51, 234, 0.1);
+    box-shadow: 0 12px 40px rgba(147, 51, 234, 0.18);
   }
 
   .project-image {
@@ -178,6 +201,10 @@ const styles = `
     pointer-events: none;
   }
 
+  body.light .image-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
   .project-content {
     padding: 24px;
     display: flex;
@@ -193,12 +220,20 @@ const styles = `
     line-height: 1.3;
   }
 
+  body.light .project-card h3 {
+    color: #1f2937;
+  }
+
   .project-card p {
     font-size: 0.95rem;
     color: #d1d5db;
     line-height: 1.6;
     margin-bottom: 20px;
     flex-grow: 1;
+  }
+
+  body.light .project-card p {
+    color: #4b5563;
   }
 
   .project-link {
@@ -221,8 +256,16 @@ const styles = `
     gap: 8px;
   }
 
+  body.light .github-btn {
+    background: linear-gradient(135deg, #9333ea, #7e22ce);
+  }
+
   .github-btn:hover {
     box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+  }
+
+  body.light .github-btn:hover {
+    box-shadow: 0 8px 20px rgba(147, 51, 234, 0.35);
   }
 
   .arrow {

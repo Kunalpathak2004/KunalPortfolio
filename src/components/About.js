@@ -22,8 +22,6 @@ export default function About() {
     },
   };
 
-
-
   return (
     <motion.section
       id="about"
@@ -72,8 +70,6 @@ export default function About() {
             and pushing the boundaries of what data can reveal.
           </motion.p>
         </motion.div>
-
-
       </div>
     </motion.section>
   );
@@ -86,6 +82,11 @@ const styles = `
     align-items: center;
     justify-content: center;
     padding: 100px 5%;
+    transition: background-color 0.3s ease;
+  }
+
+  body.light .about-section {
+    background-color: #ffffff;
   }
 
   .about-container {
@@ -114,6 +115,10 @@ const styles = `
     line-height: 1.2;
   }
 
+  body.light .about-section h2 {
+    color: #1f2937;
+  }
+
   .about-section h2::after {
     content: '';
     display: block;
@@ -122,6 +127,10 @@ const styles = `
     background: #a855f7;
     margin-top: 12px;
     border-radius: 2px;
+  }
+
+  body.light .about-section h2::after {
+    background: #9333ea;
   }
 
   .about-content {
@@ -138,12 +147,18 @@ const styles = `
     font-weight: 400;
   }
 
+  body.light .about-content p {
+    color: #374151;
+  }
+
   .about-content span {
     color: #a855f7;
     font-weight: 600;
   }
 
-
+  body.light .about-content span {
+    color: #9333ea;
+  }
 
   @media (max-width: 768px) {
     .about-section {
@@ -158,8 +173,6 @@ const styles = `
     .about-content p {
       font-size: 1rem;
     }
-
-
   }
 
   @media (max-width: 480px) {
@@ -191,8 +204,6 @@ const styles = `
       font-size: 0.95rem;
       line-height: 1.7;
     }
-
-
   }
 `;
 

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import data from "../data";
 
 export default function Skills() {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -80,6 +79,11 @@ const styles = `
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  body.light .skills-section {
+    background: #ffffff;
   }
 
   .skills-container {
@@ -107,10 +111,18 @@ const styles = `
     margin-bottom: 12px;
   }
 
+  body.light .skills-section h2 {
+    color: #1f2937;
+  }
+
   .skills-header p {
     font-size: 1.05rem;
     color: #9ca3af;
     margin-top: 12px;
+  }
+
+  body.light .skills-header p {
+    color: #6b7280;
   }
 
   .skills-grid {
@@ -134,10 +146,22 @@ const styles = `
     white-space: nowrap;
   }
 
+  body.light .skill-item {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(147, 51, 234, 0.05));
+    border-color: rgba(147, 51, 234, 0.35);
+    color: #1f2937;
+  }
+
   .skill-item:hover {
     background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(147, 51, 234, 0.2));
     border-color: rgba(168, 85, 247, 0.6);
     color: #a855f7;
+  }
+
+  body.light .skill-item:hover {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(147, 51, 234, 0.15));
+    border-color: rgba(147, 51, 234, 0.7);
+    color: #9333ea;
   }
 
   .skill-item span {

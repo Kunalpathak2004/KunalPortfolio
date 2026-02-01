@@ -87,6 +87,11 @@ const styles = `
     padding-top: 80px;
     padding-bottom: 40px;
     overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+
+  body.light .hero-section {
+    background-color: #ffffff;
   }
 
   .hero-content {
@@ -119,9 +124,18 @@ const styles = `
     transition: all 0.3s ease;
   }
 
+  body.light .hero-img {
+    border-color: #9333ea;
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.2);
+  }
+
   .hero-img:hover {
     border-color: #9333ea;
     box-shadow: 0 12px 40px rgba(168, 85, 247, 0.25);
+  }
+
+  body.light .hero-img:hover {
+    box-shadow: 0 12px 40px rgba(147, 51, 234, 0.3);
   }
 
   .hero-text h1 {
@@ -132,9 +146,17 @@ const styles = `
     margin-bottom: 12px;
   }
 
+  body.light .hero-text h1 {
+    color: #1f2937;
+  }
+
   .hero-text h1 span {
     color: #a855f7;
     font-weight: 800;
+  }
+
+  body.light .hero-text h1 span {
+    color: #9333ea;
   }
 
   .title-divider {
@@ -152,12 +174,20 @@ const styles = `
     margin-bottom: 12px;
   }
 
+  body.light .hero-text h2 {
+    color: #9333ea;
+  }
+
   .hero-text p {
     font-size: 1.05rem;
     color: #d1d5db;
     line-height: 1.6;
     margin-bottom: 32px;
     max-width: 500px;
+  }
+
+  body.light .hero-text p {
+    color: #4b5563;
   }
 
   .hero-buttons {
@@ -189,6 +219,15 @@ const styles = `
     box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
   }
 
+  body.light .btn-primary {
+    background: #9333ea;
+  }
+
+  body.light .btn-primary:hover {
+    background: #7e22ce;
+    box-shadow: 0 8px 20px rgba(147, 51, 234, 0.3);
+  }
+
   .btn-secondary {
     background: transparent;
     border: 2px solid #a855f7;
@@ -200,6 +239,17 @@ const styles = `
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+  }
+
+  body.light .btn-secondary {
+    border-color: #9333ea;
+    color: #9333ea;
+  }
+
+  body.light .btn-secondary:hover {
+    background: #9333ea;
+    color: white;
+    box-shadow: 0 8px 20px rgba(147, 51, 234, 0.3);
   }
 
   .scroll-indicator {
@@ -215,6 +265,10 @@ const styles = `
     transition: opacity 0.3s;
   }
 
+  body.light .scroll-indicator {
+    border-color: #9333ea;
+  }
+
   .scroll-indicator:hover {
     opacity: 1;
   }
@@ -225,6 +279,10 @@ const styles = `
     background: #a855f7;
     border-radius: 3px;
     margin: auto;
+  }
+
+  body.light .scroll-wheel {
+    background: #9333ea;
   }
 
   @media (max-width: 768px) {

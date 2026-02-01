@@ -10,6 +10,13 @@ const data = {
   github: "https://github.com/Kunalpathak2004",
   projects: [
     {
+      title: "Blinkit sales analysis",
+      description:
+      "Blinkit Sales Analysis is an end-to-end data analytics project exploring how pricing, product categories, visibility, and outlet features affect grocery sales. Insights are showcased via an interactive Streamlit dashboard with easy navigation.",
+      image: "/assets/blinkit.jpeg",
+      link: "https://github.com/Kunalpathak2004/blinkit_sales_analysis",
+    },
+    {
       title: "Fraud Detection System",
       description:
         "Designed a machine learning pipeline to detect fraudulent transactions, boosting detection accuracy by 20%.",
