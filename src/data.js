@@ -10,6 +10,13 @@ const data = {
   github: "https://github.com/Kunalpathak2004",
   projects: [
     {
+      title: "Healthcare access & capacity dashboard",
+      description:
+        "Developed an interactive Healthcare Access & Capacity Dashboard to analyze healthcare infrastructure, hospital capacity, and regional accessibility. Built dynamic visualizations and KPIs to help identify resource gaps and support data-driven healthcare planning.",
+      image: "/assets/healthcare.jpeg",
+      link: "https://github.com/Kunalpathak2004/Healthcare_access_capacity_dashboard",
+    },
+    {
       title: "Blinkit sales analysis",
       description:
       "Blinkit Sales Analysis is an end-to-end data analytics project exploring how pricing, product categories, visibility, and outlet features affect grocery sales. Insights are showcased via an interactive Streamlit dashboard with easy navigation.",
